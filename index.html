@@ -14,9 +14,27 @@
       <a-text
         value="Welcome to LHS!"
         scale="12 12 12"
-        color="yellow"
-        gps-entity-place="latitude:00.00000; longitude: 00.00000;"
+        color="red"
+        gps-entity-place="latitude:39.279771500084884; longitude: -84.27587460448821;"
       ></a-text>
+      
+      <!-- stop 2 -->
+      <!-- Load the Blender file -->
+		<a-assets>
+			<a-asset-item id="myModel" src="extrusion.glb"></a-asset-item>
+		</a-assets>
+		
+		<!-- Display as AR element -->
+		<a-entity gltf-model="#myModel" gps-entity-place="latitude: 39.28009140365949; longitude: -84.27551171492044;"></a-entity>
+      
+ <!-- Stop 3 -->
+      <a-text
+        value="Welcome to the Math Hallway!"
+        scale="12 12 12"
+        color="blue"
+        gps-entity-place="latitude: 39.27936177607027; longitude: -84.27579318831546;"
+      ></a-text>
+
     </a-scene>
   </body>
 </html>
