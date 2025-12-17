@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded renderer="logarithmicDepthBuffer: true;" arjs="sourceType: webcam; trackingMethod: best; debugUIEnabled: false;" vr-mode-ui="enabled: false">
+
+      <a-camera gps-camera rotation-reader></a-camera>
+
+      <!-- Stop 1 -->
+      <a-text
+        value="Welcome to LHS!"
+        scale="12 12 12"
+        color="yellow"
+        gps-entity-place="latitude:00.00000; longitude: 00.00000;"
+      ></a-text>
+    </a-scene>
+  </body>
+</html>
